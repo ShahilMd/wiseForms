@@ -10,8 +10,10 @@
     "typecheck": "turbo typecheck"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
     "@workspace/eslint-config": "workspace:*",
     "@workspace/typescript-config": "workspace:*",
+    "api": "workspace:*",
     "prettier": "^3.8.3",
     "prettier-plugin-tailwindcss": "^0.8.0",
     "turbo": "^2.9.15",
@@ -24,5 +26,9 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@trpc/server": "^11.17.0",
+    "zod": "^4.4.3"
+  }
 }

@@ -1,0 +1,17 @@
+{
+  "name": "@formcraft/trpc",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@trpc/server": "^11.17.0",
+    "zod": "^4.4.3"
+  }
+}
