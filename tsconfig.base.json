@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+
+    "strict": true,
+
+    "baseUrl": ".",
+
+    "paths": {
+      "@formcraft/db": ["packages/db/src"],
+      "@formcraft/db/*": ["packages/db/src/*"],
+
+      "@formcraft/trpc": ["packages/trpc/src"],
+      "@formcraft/trpc/*": ["packages/trpc/src/*"],
+
+      "@formcraft/validators": ["packages/validators/src"],
+      "@formcraft/validators/*": ["packages/validators/src/*"]
+    }
+  }
+}

@@ -7,13 +7,18 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "turbo format",
-    "typecheck": "turbo typecheck"
+    "typecheck": "turbo typecheck",
+    "db:generate": "drizzle-kit generate --config=packages/db/drizzle.config.ts",
+    "db:migrate": "drizzle-kit migrate --config=packages/db/drizzle.config.ts",
+    "db:studio": "drizzle-kit studio --config=packages/db/drizzle.config.ts"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@workspace/eslint-config": "workspace:*",
     "@workspace/typescript-config": "workspace:*",
     "api": "workspace:*",
+    "dotenv": "^17.4.2",
+    "drizzle-kit": "^0.31.10",
     "prettier": "^3.8.3",
     "prettier-plugin-tailwindcss": "^0.8.0",
     "turbo": "^2.9.15",
@@ -29,6 +34,8 @@
   ],
   "dependencies": {
     "@trpc/server": "^11.17.0",
+    "drizzle-orm": "^0.45.2",
+    "postgres": "^3.4.9",
     "zod": "^4.4.3"
   }
 }
